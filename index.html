@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Página de Inicio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+</head>
+<body>
+
+	    <!-- Dropdown Structure -->
+	  <nav>
+	    <div class="nav-wrapper blue-grey darken-1">
+	      <a href="#!" class="brand-logo"><img src="loge2.png" width="70" alt=""></a>
+	      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+	       <ul class="right hide-on-med-and-down">
+	          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Mis Proyectos<i class="material-icons right">arrow_drop_down</i></a></li>
+	      </ul>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Ejercicios<i class="material-icons right">arrow_drop_down</i></a></li>
+	      </ul>
+	    </div>
+	  </nav>
+
+	  <ul class="sidenav" id="mobile-demo">
+	  	<li><a class='btn cyan darken-4' href='#'>Mis Proyectos</a></li>
+	    <li><a href="sass.html"><i class="material-icons">shopping_cart</i>Carrito de Compras 0.01</a></li>
+	    <li><a href="badges.html"><i class="material-icons">shopping_cart</i>Carrito de Compras 0.02</a></li>
+	    <li class="divider" tabindex="-1"></li>
+	    <li><a class='btn cyan darken-4' href='#'>Ejercicios</a></li>
+	    <li><a href="collapsible.html"><img src="jquery.png" width="30" alt=""> JQUERY | 1</a></li>
+	    <li><a href="mobile.html"><img src="jquery.png" width="30" alt=""> JQUERY | 2</a></li>
+	    <li><a href="mobile.html"><img src="jquery.png" width="30" alt=""> JQUERY | 3</a></li>
+	  </ul>
+	        
+	    
+	      <!-- Dropdown Structure -->
+	  <ul id='dropdown1' class='dropdown-content'>
+	    <li><a href="#!"><i class="material-icons">shopping_cart</i>Carrito de Compras 0.01</a></li>
+	    <li><a href="#!"><i class="material-icons">shopping_cart</i>Carrito de Compras 0.02</a></li>
+	  </ul>
+	  	      <!-- Dropdown Structure -->
+	  <ul id='dropdown2' class='dropdown-content'>
+	    <li><a href="#!"><img src="jquery.png" width="30" alt=""> JQUERY</a></li>
+	    <li><a href="#!"><img src="jquery.png" width="30" alt=""> JQUERY</a></li>
+	    <li><a href="#!"><img src="jquery.png" width="30" alt=""> JQUERY</a></li>
+	  </ul>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.js"></script>
+    <script>
+        $(document).ready(function() {
+        	 $('.sidenav').sidenav();
+            $(".dropdown-trigger").dropdown();
+        });
+    </script>
+</body>
+</html>
